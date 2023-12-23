@@ -1,0 +1,311 @@
+:root {
+    /* Kırmızı Buton Root yapısı */
+    --bg-red: rgba(190, 4, 4);
+    --btn-red: rgba(248, 56, 56);
+    /* Siyah Buton Root Yapısı */
+    --bg-black: rgba(0, 0, 0);
+    --btn-black: rgba(87, 87, 87);
+    /* Beyaz Buton Root Yapısı */
+    --bg-white: rgba(255, 255, 255);
+    --btn-white: rgba(220, 220, 220);
+    /* Kahverengi Buton Root Yapısı */
+    --bg-brown: rgba(139, 69, 19);
+    --btn-brown: rgba(160, 82, 45);
+    /* Turuncu Buton Root Yapısı */
+    --bg-orange: rgba(255, 165, 0);
+    --btn-orange: rgba(255, 140, 0);
+    /* Sarı Buton Root Yapısı */
+    --bg-yellow: rgba(255, 255, 0);
+    --btn-yellow: rgba(255, 255, 102);
+    /* Mor Buton Root Yapısı */
+    --bg-purple: rgba(128, 0, 128);
+    --btn-purple: rgba(148, 0, 211);
+    /* Yeşil Buton Root Yapısı */
+    --bg-green: rgba(0, 128, 0);
+    --btn-green: rgba(65, 145, 65);
+    /* Mavi Buton Root Yapısı */
+    --bg-blue: rgba(0, 0, 255);
+    --btn-blue: rgba(30, 144, 255);
+    /* Pembe Buton Root Yapısı */
+    --bg-pink: rgba(255, 182, 193);
+    --btn-pink: rgba(255, 105, 180);
+}
+
+
+/* Kırmızı Normal Buton Class Yapısı */
+.btn-red {
+    background-color: var(--bg-red) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-red:hover {
+    background-color: var(--btn-red) !important;
+    box-shadow: 2px 2px 2px var(--bg-red);
+    text-shadow: 1px 1px 1px var(--bg-red);
+}
+/* Kırmızı Outline Buton Class Yapısı */
+.btn-out-red {
+    outline: 2px solid var(--bg-red);
+    color: var(--bg-red);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-red:hover {
+    background-color: var(--btn-red) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Siyah Normal Buton Class Yapısı */
+.btn-black {
+    background-color: var(--bg-black) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-black:hover {
+    background-color: var(--btn-black) !important;
+    box-shadow: 2px 2px 2px var(--bg-black);
+    text-shadow: 1px 1px 1px var(--bg-black);
+}
+/* Siyah Outline Buton Class Yapısı */
+.btn-out-black {
+    outline: 2px solid var(--bg-black);
+    color: var(--bg-black);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-black:hover {
+    background-color: var(--btn-black) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Beyaz Normal Buton Class Yapısı */
+.btn-white {
+    background-color: var(--bg-white) !important;
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-white:hover {
+    background-color: var(--btn-white) !important;
+    box-shadow: 2px 2px 2px var(--bg-white);
+    text-shadow: 1px 1px 1px var(--bg-white);
+}
+/* Beyaz Outline Buton Class Yapısı */
+.btn-out-white {
+    outline: 2px solid var(--bg-white);
+    color: var(--bg-white);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-white:hover {
+    background-color: var(--btn-white) !important;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+
+/* Kahverengi Normal Buton Class Yapısı */
+.btn-brown {
+    background-color: var(--bg-brown) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-brown:hover {
+    background-color: var(--btn-brown) !important;
+    box-shadow: 2px 2px 2px var(--bg-brown);
+    text-shadow: 1px 1px 1px var(--bg-brown);
+}
+/* Kahverengi Outline Buton Class Yapısı */
+.btn-out-brown {
+    outline: 2px solid var(--bg-brown);
+    color: var(--bg-brown);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-brown:hover {
+    background-color: var(--btn-brown) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Turuncu Normal Buton Class Yapısı */
+.btn-orange {
+    background-color: var(--bg-orange) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-orange:hover {
+    background-color: var(--btn-orange) !important;
+    box-shadow: 2px 2px 2px var(--bg-orange);
+    text-shadow: 1px 1px 1px var(--bg-orange);
+}
+/* Turuncu Outline Buton Class Yapısı */
+.btn-out-orange {
+    outline: 2px solid var(--bg-orange);
+    color: var(--bg-orange);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-orange:hover {
+    background-color: var(--btn-orange) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Sarı Normal Buton Class Yapısı */
+.btn-yellow {
+    background-color: var(--bg-yellow) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-yellow:hover {
+    background-color: var(--btn-yellow) !important;
+    box-shadow: 2px 2px 2px var(--bg-yellow);
+    text-shadow: 1px 1px 1px var(--bg-yellow);
+}
+/* Sarı Outline Buton Class Yapısı */
+.btn-out-yellow {
+    outline: 2px solid var(--bg-yellow);
+    color: var(--bg-yellow);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-yellow:hover {
+    background-color: var(--btn-yellow) !important;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+
+/* Mor Normal Buton Class Yapısı */
+.btn-purple {
+    background-color: var(--bg-purple) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-purple:hover {
+    background-color: var(--btn-purple) !important;
+    box-shadow: 2px 2px 2px var(--bg-purple);
+    text-shadow: 1px 1px 1px var(--bg-purple);
+}
+/* Mor Outline Buton Class Yapısı */
+.btn-out-purple {
+    outline: 2px solid var(--bg-purple);
+    color: var(--bg-purple);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-purple:hover {
+    background-color: var(--btn-purple) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+/* Yeşil Normal Buton Class Yapısı */
+.btn-green {
+    background-color: var(--bg-green) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-green:hover {
+    background-color: var(--btn-green) !important;
+    box-shadow: 2px 2px 2px var(--bg-green);
+    text-shadow: 1px 1px 1px var(--bg-green);
+}
+/* Yeşil Outline Buton Class Yapısı */
+.btn-out-green {
+    outline: 2px solid var(--bg-green);
+    color: var(--bg-green);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-green:hover {
+    background-color: var(--btn-green) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Mavi Normal Buton Class Yapısı */
+.btn-blue {
+    background-color: var(--bg-blue) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-blue:hover {
+    background-color: var(--btn-blue) !important;
+    box-shadow: 2px 2px 2px var(--bg-blue);
+    text-shadow: 1px 1px 1px var(--bg-blue);
+}
+/* Mavi Outline Buton Class Yapısı */
+.btn-out-blue {
+    outline: 2px solid var(--bg-blue);
+    color: var(--bg-blue);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-blue:hover {
+    background-color: var(--btn-blue) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+/* Pembe Normal Buton Class Yapısı */
+.btn-pink {
+    background-color: var(--bg-pink) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-pink:hover {
+    background-color: var(--btn-pink) !important;
+    box-shadow: 2px 2px 2px var(--bg-pink);
+    text-shadow: 1px 1px 1px var(--bg-pink);
+}
+/* Pembe Outline Buton Class Yapısı */
+.btn-out-pink {
+    outline: 2px solid var(--bg-pink);
+    color: var(--bg-pink);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-pink:hover {
+    background-color: var(--btn-pink) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+

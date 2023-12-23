@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* INLINE/ BLOCK MENU  YAPISI*********************/
+.navbar-inline a {
+    text-decoration: none;
+    color: white;
+}
+
+.inline-logo {
+    width: 80px;
+}
+
+.navbar-inline {
+    background-color:purple;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inline-list {
+    list-style-type: none;
+}
+
+.inline-list .inline-list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+@media all and (max-width: 768px) {
+    .navbar-inline {
+        flex-direction: column;
+    }
+
+    .inline-list .inline-list-item {
+        display: block;
+        border-top: 1px solid rgba(0, 0, 0, 0.374);
+        padding: 20px 10px 10px 10px;
+    }
+
+    .inline-list {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* LEFT MENU  YAPISI************************/
+.navbar-left {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-left img {
+    text-align: center;
+    padding: 20px;
+    max-width: 80%;
+}
+
+.left-list {
+    list-style: none;
+    padding: 0;
+}
+
+.left-list .list-item {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.left-list a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 5px;
+}
+
+@media all and (max-width: 768px) {
+
+    .navbar-left {
+        width: 125px;
+    }
+
+    .navbar-left img {
+        padding: 15px;
+        max-width: 70%;
+    }
+}
+
+/* BLOCK MENU YAPISI *************************/
+.navbar-block {
+    background-color: purple;
+}
+
+.block-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.block-list-item {
+    display: inline;
+}
+
+.block-list-item a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 768 pixel sınırına göre medya sorgusu */
+@media (max-width: 768px) {
+    .navbar-block {
+        text-align: center;
+    }
+
+    .block-listl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .block-list-item {
+        margin-bottom: 10px;
+    }
+}

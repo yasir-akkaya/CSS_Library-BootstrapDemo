@@ -1,0 +1,166 @@
+/* Container yapısının tanımlanması */
+.container {
+    display: grid;
+    /* 12 kolonlu grid yapısı */
+    grid-template-columns: repeat(12, 1fr);
+    /* Kolonlar arası boşuk ayarı*/
+    gap: 10px;
+    margin: 6px;
+}
+
+.container>div {
+    padding: 5px;
+}
+
+/* Kolon sınıfları ve genişlik değerlerini taşıyan classların
+tanımlanması */
+.col-1 {
+    grid-column: span 1;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-7 {
+    grid-column: span 7;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-9 {
+    grid-column: span 9;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-11 {
+    grid-column: span 11;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+/* 1024Px TABLET EKRANI */
+@media screen and (max-width: 1024px) {
+    .col-md-1 {
+        grid-column: span 1;
+    }
+
+    .col-md-2 {
+        grid-column: span 2;
+    }
+
+    .col-md-3 {
+        grid-column: span 3;
+    }
+
+    .col-md-4 {
+        grid-column: span 4;
+    }
+
+    .col-md-5 {
+        grid-column: span 5;
+    }
+
+    .col-md-6 {
+        grid-column: span 6;
+    }
+
+    .col-md-7 {
+        grid-column: span 7;
+    }
+
+    .col-md-8 {
+        grid-column: span 8;
+    }
+
+    .col-md-9 {
+        grid-column: span 9;
+    }
+
+    .col-md-10 {
+        grid-column: span 10;
+    }
+
+    .col-md-11 {
+        grid-column: span 11;
+    }
+
+    .col-md-12 {
+        grid-column: span 12;
+    }
+}
+
+/* 768px TELEFON EKRANI */
+@media screen and (max-width: 768px) {
+    .col-s-1 {
+        grid-column: span 1;
+    }
+
+    .col-s-2 {
+        grid-column: span 2;
+    }
+
+    .col-s-3 {
+        grid-column: span 3;
+    }
+
+    .col-s-4 {
+        grid-column: span 4;
+    }
+
+    .col-s-5 {
+        grid-column: span 5;
+    }
+
+    .col-s-6 {
+        grid-column: span 6;
+    }
+
+    .col-s-7 {
+        grid-column: span 7;
+    }
+
+    .col-s-8 {
+        grid-column: span 8;
+    }
+
+    .col-s-9 {
+        grid-column: span 9;
+    }
+
+    .col-s-10 {
+        grid-column: span 10;
+    }
+
+    .col-s-11 {
+        grid-column: span 11;
+    }
+
+    .col-s-12 {
+        grid-column: span 12;
+    }
+
+}

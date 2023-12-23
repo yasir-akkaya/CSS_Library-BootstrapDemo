@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="form-box">
+        <form class="form" action="#">
+            <label for="name">Ad Soyad:</label>
+            <input class="form-item" type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input class="form-item" type="email" id="email" name="email" required>
+
+            <label for="gender">Cinsiyet:</label>
+            <select class="form-item" id="gender" name="gender">
+                <option value="male">Erkek</option>
+                <option value="female">Kadın</option>
+                <option value="other">Diğer</option>
+            </select>
+
+            <label for="birthdate">Doğum Tarihi:</label>
+            <input class="form-item" type="date" id="birthdate" name="birthdate">
+
+            <label for="time">Saat:</label>
+            <input class="form-item" type="time" id="time" name="time">
+
+            <label for="quantity">Miktar:</label>
+            <input class="form-item" type="number" id="quantity" name="quantity" min="1" max="100">
+
+            <label for="message">Mesaj:</label>
+            <textarea class="form-item" id="message" name="message" rows="8"></textarea>
+
+        </form>
+    </div>
+</body>
+</html>

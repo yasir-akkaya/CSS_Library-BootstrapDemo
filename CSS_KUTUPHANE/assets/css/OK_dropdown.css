@@ -1,0 +1,63 @@
+/* Dropdown içeriğininin Gizlenmesi */
+.drop-down {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* Uygun margin değeri verilir ve diğer stillerden etkilenmemesi için important yapılır */
+    margin-top: 6px !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriğini Görünür Yapar */
+.dropdown:hover .drop-down {
+    display: block;
+}
+
+/* Dropdown Öğeleri için stil */
+.drop-down a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Dropdown hover*/
+.drop-down a:hover {
+    background-color: #00000063;
+}
+
+
+/* Sağ-drop menunun içeriğininin Gizlenmesi */
+.drop-right {
+    display: none;
+    /* Drop menu butonunun sabit kalması için */
+    position: absolute !important;
+    background-color: #f9f9f9;
+    /* Uygun margin değeri verilir ve diğer stillerden etkilenmemesi için important yapılır */
+    margin-top: 6px !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriğini Görünür Yapar */
+.dropdown:hover .drop-right {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown Öğeleri için stil */
+.drop-right a {
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Dropdown hover*/
+.drop-right a:hover {
+    background-color: #00000063;
+}
+

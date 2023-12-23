@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T&W Css Library</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-arial">
+    <div class="container">
+        <!-- Sola sabit menünün oluşturulması -->
+        <div class="col-2 col-m-2 col-s-2"> <!-- menu için col yapısı div'i -->
+            <nav class="navbar-left bg-purple">
+                <div class="ps1">
+                    <img class="img-reg" src="assets/images/T-W-logo.png">
+                </div>
+                <ul class="left-list">
+                    <li class="list-item">
+                        <a class="btn-purple" href="#grid">
+                            Grid Yapısı
+                            <i class="fa-solid fa-grip" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#color">
+                            Renk Çeşitleri
+                            <i class="fa-solid fa-palette" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#txt-size">
+                            Yazı Boyutları
+                            <i class="fa-solid fa-text-height" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#txt-font">
+                            Yazı Fontları
+                            <i class="fa-solid fa-font" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#margin-padding">
+                            Margin ve Padding
+                            <i class="fa-solid fa-ruler-combined" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#slider">
+                            Slider
+                            <i class="fa-solid fa-tv" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#table">
+                            Tablo Yapıları
+                            <i class="fa-solid fa-table" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#img">
+                           Görsel Kullanımı
+                           <i class="fa-solid fa-image" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#button">
+                            Butonlar
+                            <i class="fa-solid fa-hand-pointer" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#overflow-img">
+                            Overflow Div Yapıları
+                            <i class="fa-solid fa-minimize" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple"href="#menu">
+                            Menü Yapıları
+                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#dropdown">
+                            Dropdown Menu
+                            <i class="fa-regular fa-square-caret-down" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-purple" href="#form">
+                            Form Yapısı
+                            <i class="fa-regular fa-rectangle-list" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- menu için col yapısı div'i -->
+        <div class="col-10 col-m-10 col-s-10 ps0"> <!-- Content alanını kapasayan grid yapısı div'i -->
+            <h2 class="head-xl">T&W CSS Kütüphanesine Hoşgeldiniz!</h2>
+            <br>
+            <hr>
+            <h3 id="grid" class="head-l mt2"> Grid Yapısı: </h3>
+            <p style="white-space: pre;">
+Grid yapısı, 3 farklı ekran boyutunda 12'lik kolon yapısında ekranı yatay olarak kapsaycak şekilde
+tasarlanmıştır.
+Aşağıda örnek olarak hazırlanan grid/box yapısı:
+<strong>Laptop Ekranı (1024px'den büyük ekran boyutlarında) : </strong>8/4 oranında,
+<strong>Tablet Ekranı (1024px ve 769px arası ekran boyutlarında) : </strong>6/6 oranında,
+<strong>Mobil Ekran (768px'den küçük ekran boyutlarında) : </strong>4/8 oranında bölünmektedir.
+            </p>
+            <div class="container mt2">
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">1</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">2</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">3</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">4</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">5</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">6</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">7</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">8</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">9</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">10</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">11</div>
+                <div style="height: 75px; text-align: center;" class="col-1 bg-yellow p3">12</div>
+                <div style="height: 75px; text-align: center;" class="col-8 col-md-6 col-s-4 bg-green p2">8 Kolonluk
+                    Yapı/Tablet Ekranında 6 Kolonluk Yapı/Mobil Ekranda 4 Kolonluk Yapı</div>
+                <div style="height: 75px; text-align: center;" class="col-4 col-md-6 col-s-8 bg-red p2">4 Kolonluk
+                    Yapı/Tablet Ekranında 6 Kolonluk Yapı/Mobil Ekranda 8 Kolonluk Yapı</div>
+            </div>
+            <br>
+            <p class="mt2">
+                Bu yapıyı oluşturan html kodları aşağıda verilmiştir:
+            </p>
+        </div> <!-- Content alanını kapasayan grid yapısı div'i -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <div class="img-reg" style="width: 800px; height: auto;">
+                <img style="width: 100%;" src="assets/images/grid-html.png">
+            </div>
+        </div>
+        <!-- Renk Özelliklerinin tanıtıldığı content alanı -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="color" class="head-l mt2"> Renk Çeşitleri </h3>
+            <p style="white-space: pre;">
+Renk çeşitleri;
+<strong>Arkaplan (bg-renk),</strong>
+<strong>Yazı Renkleri (txt-renk)</strong> ve bunlarla birlikte;
+Kırmızı, siyah, beyaz, kahverengi, turuncu, sarı, mor, yeşil, mavi, pembe <i>(red, black, white, brown, orange, 
+yellow, green, blue, pink)</i> olmak üzere toplam <strong>10 farklı</strong> renkten oluşan bir renkpaletini barındırmaktadır.
+Renklere dair örnek kullanımlar ve bu örneğin html dosyasında kullanımı aşağıda verilmiştir.
+            </p>
+        </div>
+        
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2 par-xl" style="grid-column: 3/5; max-width: 220px;">
+            <div><p class="bg-red txt-red mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-black txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-white txt-black mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-brown txt-brown mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-orange txt-orange mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-yellow txt-yellow mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-purple txt-purple mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-green txt-green mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-blue txt-blue mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-pink txt-pink mt1">Lorem ipsum dolor sit amet.</p></div>
+        </div>
+       
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2 par-xl" style="grid-column: 6/13; max-width: 220px;">
+            <div><p class="bg-red txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-black txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-white txt-black mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-brown txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-orange txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-yellow txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-purple txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-green txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-blue txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+            <div><p class="bg-pink txt-white mt1">Lorem ipsum dolor sit amet.</p></div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="img-reg" style="width: 800px; height: auto;">
+                <img style="width: 100%;" src="assets/images/color-ornek.PNG">
+            </div>
+        </div>
+        <!-- Yazı Boyutlarının tanıtıldığı content -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="txt-size" class="head-l mt2"> Yazı Boyutları </h3>
+            <h4 class="head-m mt2">Paragraf İçi Yazı Boyutları:</h4>
+            <p style="white-space: pre;">
+Kütüphanemizde, 10 farklı paragraf içi boyutuna tanımlanmış class yapısı mevcuttur:
+    <p class="par-4xl">4XL Paragraf İçi Yazı Boyutu</p>
+    <p class="par-3xl">3XL Paragraf İçi Yazı Boyutu</p>
+    <p class="par-xxl">XXL Paragraf İçi Yazı Boyutu</p>
+    <p class="par-xl">XL Paragraf İçi Yazı Boyutu</p>
+    <p class="par-l">L Paragraf İçi Yazı Boyutu</p>
+    <p class="par-m">M Paragraf İçi Yazı Boyutu</p>
+    <p class="par-s">S Paragraf İçi Yazı Boyutu</p>
+    <p class="par-xs">XS Paragraf İçi Yazı Boyutu</p>
+    <p class="par-xxs">XXS Paragraf İçi Yazı Boyutu</p>
+    <p class="par-3xs">3XS Paragraf İçi Yazı Boyutu</p>
+            </p>
+            <h4 class="head-m mt2">Başlık Yazı Boyutları:</h4>
+            <p style="white-space: pre;">
+Başlık yazı boyutları olarak da kullanıcılara 5 farklı seçenek sunulmuştur:
+    <p class="head-xl">XL Başlık Boyutu</p>
+    <p class="head-l">L Başlık Boyutu</p>
+    <p class="head-m">M Başlık Boyutu</p>
+    <p class="head-s">S Başlık Boyutu</p>
+    <p class="head-xs">XS Başlık Boyutu</p>                
+            </p>
+            <p class="mt2" style="white-space: pre;">
+Paragraf içi yazı boyutları ve başlık boyutlarına dair örneklerin html dosyasında kullanımı aşağıda verilmiştir.
+            </p>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="img-reg" style="width: 800px; height: auto;">
+                <img style="width: 100%;" src="assets/images/txt-size.PNG">
+            </div>
+        </div>
+        <!-- Yazı Fontlarının Tanıtıldığı section -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="txt-font" class="head-l mt2"> Yazı Fontları </h3>
+            <p class="pb3" style="white-space: pre;">
+Kütüphanemizde; 
+<p class="font-times par-l">Times New Roman</p>
+<p class="font-arial par-l">Arial</p>
+<p class="font-courier par-l">Courier New</p>
+<p class="font-lucida par-l">Lucide</p>
+<p class="font-calibri par-l pb1">Calibri</p>
+olmak üzere 5 farklı yazı fontu tanımlanmış class yapısı mevcuttur. Bu fontların html dosyasında örnek kullanımı aşağıda gösterilmiştir.    
+            </p>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="img-reg" style="width: 800px; height: auto;">
+                <img style="width: 100%;" src="assets/images/fonts-ornek.PNG">
+            </div>
+        </div>
+        <!-- Margin ve Padding Özelliklerinin tanıtıldığı section -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/6;">
+            <hr>
+            <h3 id="margin-padding" class="head-l mt2"> Margin ve Padding</h3>
+            <p class="pb3" style="white-space: pre;">
+Kütüphanemizde kullanılan margin/padding class yapıları ve uygulanan değerler px cinsinde aşağıdaki tabloda verilmiştir.            
+            </p>
+            <table class="hov-tab bor-tab resp-tab bg-purple txt-white">
+                <thead>
+                    <tr>
+                        <th>Class Tanımlaması</th>
+                        <th>Uygulanan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>p0/m0</td>
+                        <td>Padding/margin değerini <b>0px</b> yapar</td>
+                    </tr>
+                    <tr>
+                        <td>p1/m1</td>
+                        <td>Padding/margin değerini <b>10px</b> yapar</td>
+                    </tr>
+                    <tr>
+                        <td>p2/m2</td>
+                        <td>Padding/margin değerini <b>20px</b> yapar</td>
+                    </tr>
+                    <tr>
+                        <td>p3/m3</td>
+                        <td>Padding/margin değerini <b>30px</b> yapar</td>
+                    </tr>
+                    <tr>
+                        <td>p4/m4</td>
+                        <td>Padding/margin değerini <b>40px</b> yapar</td>
+                    </tr>
+                    <tr>
+                        <td>p5/m5</td>
+                        <td>Padding/margin değerini <b>50px</b> yapar</td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <!-- Slider'ların Gösterildiği Section -->
+        <div class="col-10 col-m-10 col-s-10 p1 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="slider" class="head-l mt2"> Slider </h3>
+            <p class="pb3" style="white-space: pre;">
+Kütüphanemizde sırasıyla;
+
+<strong>700x400 boyutunda,</strong>
+<strong>Tam genişliğe sahip normal,</strong>
+<strong>Tam genişliğe sahip geçiş animasyonlu</strong>
+
+olmak üzere üç farklı slider yapısı kullanılabilir. Bu slider'ların her birinden birer örnek ve html dosyasında kullanım örnekleri aşağıda gösterilmiştir.
+            </p>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt0" style="grid-column: 3/13;">
+            <div class="slider-wrapper-one">
+                <div class="slider-one">
+                  <div class="img-one">
+                    <img src="assets/images/example_for_slider_1.jpg">
+                  </div>
+                  <div class="img-two">
+                    <img src="assets/images/example_for_slider_2.jpg">
+                  </div>
+                  <div class="img-three">
+                    <img src="assets/images/example_for_slider_3.jpg">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="slider-wrapper-two">
+                <div class="slider-two">
+                  <div class="img-one">
+                    <img src="assets/images/example_for_slider_1.jpg">
+                  </div>
+                  <div class="img-two">
+                    <img src="assets/images/example_for_slider_2.jpg">
+                  </div>
+                  <div class="img-three">
+                    <img src="assets/images/example_for_slider_3.jpg">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="slider-wrapper-three">
+                <div class="slider-three">
+                  <div class="img-one">
+                    <img src="assets/images/example_for_slider_1.jpg">
+                  </div>
+                  <div class="img-two">
+                    <img src="assets/images/example_for_slider_3.jpg">
+                  </div>
+                  <div class="img-three">
+                    <img src="assets/images/example_for_slider_3.jpg">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/6;">
+            <div class="img-reg" style="width: 400px; height: auto;">
+                <img style="width: 100%;" src="assets/images/700x400-slider.PNG">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 6/9;">
+            <div class="img-reg" style="width: 400px; height: auto;">
+                <img style="width: 100%;" src="assets/images/full-width-slider.PNG">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 9/13;">
+            <div class="img-reg" style="width: 380px; height: auto;">
+                <img style="width: 100%;" src="assets/images/full-width-fade-slider.PNG">
+            </div>
+        </div>
+        <!-- Tablo Yapılarının Gösterildiği Section -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="table" class="head-l mt2">Tablo Yapıları</h3>
+            <p class="pb3" style="white-space: pre;">
+Kütüphanemizde;
+
+<strong>Responsive Yapılı,</strong>
+<strong>Kenarlıklı(bordered),</strong>
+<strong>Çizgili(striped),</strong>
+<strong>Seçimli(hoverable)</strong>
+
+olmak üzere 4 farklı tablo class yapısı mevcuttur. Bu class'lar birbirleriyle birlikte de kullanılabilmektedir.
+
+Aşağıda birbirinden farklı tablo yapıları ve yanlarında html dosyasında nasıl kullanıldığına dair bir örnek gösterilmiştir.   
+            </p>
+            
+            <table class="hov-tab bor-tab">
+                <thead>
+                    <tr>
+                        <th><b class="par-l">Hoverable ve Bordered</b> tablo yapısı</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+            <table class="resp-tab strp-tab bg-orange txt-white mt2">
+                <thead>
+                    <tr>
+                        <th><b class="par-l">Striped ve Responsive</b> tablo yapısı</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+            <table class="resp-tab strp-tab hov-tab bor-tab bg-pink txt-white mt2">
+                <thead>
+                    <tr>
+                        <th><b class="par-l">Striped,Responsive,Hoverable,Bordered</b> tablo yapısı</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="img-reg" style="width: 800px; height: auto;">
+                <img style="width: 100%;" src="assets/images/table.PNG">
+            </div>
+        </div>
+        <!-- Görsel Kullanım özelliklerinin gösterildiği section -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="img" class="head-l mt2"> Görsel Kullanımı </h3>
+            <p class="pb3" style="white-space: pre;">
+Kütüphanemizde; 
+
+Regular ve Border-radius 
+
+olmak üzere 2 farklı görsel kullanım class'ı mevcuttur. Bunların html dosyasında kullanım örnekleri Regular ve Border-radius olarak iki farklı
+şekilde aşağıda gösterilmiştir.
+            </p>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt0" style="grid-column: 3/13;">
+            <div style="width: 800px; height: auto;">
+                <img  class="img-reg" src="assets/images/regular-ornek.PNG">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div style="width: 800px; height: auto;">
+                <img class="img-rad" src="assets/images/rad-ornek.PNG">
+            </div>
+        </div>
+        <!-- Buton Özelliklerinin Tanıtıldığı section -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="button" class="head-l mt2"> Butonlar </h3>
+            <p style="white-space: pre;">
+Butonlar;
+Regular ve
+Outline
+olmak üzere 2 çeşit ve renk seçenekleri için de; 
+kırmızı, siyah, beyaz, kahverengi, turuncu, sarı, mor, yeşil, mavi, pembe <i>(red, black, white, brown, orange, 
+yellow, green, blue, pink)</i> olmak üzere toplam <strong>10 farklı</strong> renkten oluşan bir renk paletini barındırmaktadır.
+Butonların her iki çeşidi ve tüm renkleri barındıran örneklerinin yanında bu butonların html dosyasında tanımlanma örneği aşağıda yer almaktadır.
+            </p>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 mt2 par-l" style="grid-column: 3/5; max-width: 220px; ">
+            <div class="mb2"><a href="#" class="btn-red txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-black txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-white txt-black">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-brown txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-orange txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-yellow txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-purple txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-green txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-blue txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-pink txt-white">Lorem</a></div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 mt2 par-l" style="grid-column: 6/13; max-width: 220px;">
+            <div class="mb2"><a href="#" class="btn-out-red txt-red">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-black txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-white txt-black">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-brown txt-brown">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-orange txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-yellow txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-purple txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-green txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-blue txt-white">Lorem</a></div>
+            <div class="mb2"><a href="#" class="btn-out-pink txt-white">Lorem</a></div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="img-reg" style="width: 800px; height: auto;">
+                <img style="width: 100%;" src="assets/images/buton-ornek.PNG">
+            </div>
+        </div>
+        <!-- Overflow Div Yapıları -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="overflow-img" class="head-l mt2"> Overflow Div Yapıları </h3>
+            <p style="white-space: pre;">
+Kütüphanemizde overflow-div yapısına sahip bir box içerisine atılan görseller için belirli class'lar belirlenmiştir.
+<strong>.overflow-fit: </strong>Yükseklik ve genişlik değerleri girilmiş olan div içerisine görseli kenarlıklarla birlikte ortalar.
+<strong>.overflow-x: </strong>Görseli genişlik değerine göre sabitler
+<strong>.overflow-y: </strong>Görseli yükseklik değerine göre sabitler
+<strong>.overflow.org: </strong>Görselin orjinal boyutunu bozmadan, overflow bir div içerisine alır
+
+Bu div yapıları ile ilgili sırasıyla örnekler ve html dosyasında nasıl kullanılacağı aşağıda gösterilmiştir.
+            </p>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="overflow-fit bg-purple" style="width: 250px; height: 250px;">
+                <img class="img-reg" style="width: 100%;" src="assets/images/example_for_slider_1.jpg">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="overflow-x" style="height: 300px;">
+                <img style="width: 100%;" src="assets/images/example_for_slider_1.jpg">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="overflow-y" style="width: 300px;">
+                <img class="img-reg" style="width: 100%;" src="assets/images/example_for_slider_1.jpg">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div class="overflow-org">
+                <img class="img-reg" style="width: 100%;" src="assets/images/example_for_slider_1.jpg">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div style="width: 800px; height: auto;">
+                <img  class="img-reg" style="width: 100%;" src="assets/images/overflow-img.PNG">
+            </div>
+        </div>
+        <!-- Menü Yapılarının tanıtıldığı section -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="menu" class="head-l mt2"> Menü Yapıları </h3>
+            <p style="white-space: pre;">
+Kütüphanemizde birbirinden farklı 3 çeşit menü yapısı bulunmaktadır;
+<strong>".navbar-left" Menü Yapısı: </strong>Bu dökümantasyon sitesinde kullanılan, sola sabit ve relative menü yapısıdır
+<strong>".navbar-inline" Menü Yapısı: </strong>Büyük ekranda inline olan, ekran küçüldüğünde block haline dönen menü yapısıdır
+<strong>".navbar-block" Menü Yapısı: </strong>Block halinde tasarlanmış ve relative menü yapısıdır
+
+Bu menü yapılarının örnekleriyle alakalı ekran görüntüleri ve kütüphanemizde kullanılan menü şablonu yapısı aşağıda verilmiştir.
+            </p>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 mt2 par-l" style="grid-column: 3/8; max-width: 220px; ">
+            <div style="width: 650px; height: auto;  border: solid purple 2px;">
+                <img  class="img-reg" style="width: 100%;" src="assets/images/inline-big.PNG">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 mt2 par-l" style="grid-column: 9/13; max-width: 220px; ">
+            <div style="width: 450px; height: auto; border: solid purple 2px;">
+                <img  class="img-reg" style="width: 100%;" src="assets/images/inline-small.PNG">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 mt2 par-l" style="grid-column: 3/8; max-width: 220px; ">
+            <div style="width: 650px; height: auto;  border: solid purple 2px;">
+                <img  class="img-reg" style="width: 100%;" src="assets/images/block-big.PNG">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 mt2 par-l" style="grid-column: 9/13; max-width: 220px; ">
+            <div style="width: 450px; height: auto; border: solid purple 2px;">
+                <img  class="img-reg" style="width: 100%;" src="assets/images/block-small.PNG">
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div style="width: 800px; height: auto;">
+                <img  class="img-reg" style="width: 100%;" src="assets/images/menu-ornek.PNG">
+            </div>
+        </div>
+        <!-- Dropdown Menü Yapısı Anlatıldığı Secetion -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="dropdown" class="head-l mt2">Dropdown Menu</h3>
+            <p class="pb3" style="white-space: pre;">
+Kütüphanemizde;
+<strong>Aşağı</strong> ve <strong>sağa</strong> olmak üzere 2 çeşit dropdown buton tasarımı bulunmaktadır. Bu buton aynı zamanda normla buton özellikleriyle birlikte de kullanılabilmektedir.
+Buton örnekleri ve html dosyasında gösterimi aşağıda belirtilmiştir. 
+            </p>
+        <div class="col-10 col-m-10 col-s-10 mb3 par-l" style="grid-column: 3/13; max-width: 500px; ">
+            <div class="dropdown">
+                <a href="#" class="btn-purple">drop-down</a>
+                <div class="drop-down">
+                    <a href="#">Seçenek 1</a>
+                    <a href="#">Seçenek 2</a>
+                    <a href="#">Seçenek 3</a>
+                </div>
+            </div>
+            <div class="dropdown" style="float: right;">
+                <a href="#" class="btn-purple">drop-right</a>
+                <div class="drop-right">
+                    <a href="#">Seçenek 1</a>
+                    <a href="#">Seçenek 2</a>
+                    <a href="#">Seçenek 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div style="width: 800px; height: auto;">
+                <img  class="img-reg" style="width: 100%;" src="assets/images/drop-ornek.PNG">
+            </div>
+        </div>
+        <!-- Form yapısı anlatıldığı section -->
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <hr>
+            <h3 id="form" class="head-l mt2">Form Yapısı</h3>
+            <p style="white-space: pre;">
+Kütüphanemizde son olarak <strong>relative</strong> form yapıları bulunmaktadır. Bu form yapısının bir örneği ve html dosyasında kullanılması gereken öreneği
+aşağıda gösterilmiştir.
+            </p>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0" style="grid-column: 3/13;">
+            <div class="form-box">
+                <form class="form" action="#">
+                    <label for="name">Ad Soyad:</label>
+                    <input class="form-item" type="text" id="name" name="name" required>
+        
+                    <label for="email">E-posta:</label>
+                    <input class="form-item" type="email" id="email" name="email" required>
+        
+                    <label for="gender">Cinsiyet:</label>
+                    <select class="form-item" id="gender" name="gender">
+                        <option value="male">Erkek</option>
+                        <option value="female">Kadın</option>
+                        <option value="other">Diğer</option>
+                    </select>
+        
+                    <label for="birthdate">Doğum Tarihi:</label>
+                    <input class="form-item" type="date" id="birthdate" name="birthdate">
+        
+                    <label for="time">Saat:</label>
+                    <input class="form-item" type="time" id="time" name="time">
+        
+                    <label for="quantity">Miktar:</label>
+                    <input class="form-item" type="number" id="quantity" name="quantity" min="1" max="100">
+        
+                    <label for="message">Mesaj:</label>
+                    <textarea class="form-item" id="message" name="message" rows="8"></textarea>
+        
+                </form>
+            </div>
+        </div>
+        <div class="col-10 col-m-10 col-s-10 ps0 mt2" style="grid-column: 3/13;">
+            <div style="width: 800px; height: auto;">
+                <img  class="img-reg" style="width: 100%;" src="assets/images/form-ornek.PNG">
+            </div>
+        </div>
+    </div> <!-- genel col yapısı div'i -->
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+/* BUTON RENK YAPISI "button-style.css" DOSYASINDA OLUŞTURULUŞTUR */
+:root{
+    /* Kırmızı root yapısı */
+    --bg-red: rgba(190,4,4)  ;
+    --txt-red: rgba(248,56,56) ;
+    /* Siyah Root Yapısı */
+    --bg-black: rgba(0, 0, 0) ;
+    --txt-black: rgb(87, 87, 87) ;
+    /* Beyaz Root Yapısı */
+    --bg-white: rgba(255, 255, 255) ;
+    --txt-white: rgba(220, 220, 220) ;
+    /* Kahverengi Root Yapısı */
+    --bg-brown: rgba(139, 69, 19) ;
+    --txt-brown: rgba(160, 82, 45) ;
+    /* Turuncu Root Yapısı */
+    --bg-orange: rgba(255, 165, 0) ;
+    --txt-orange: rgba(255, 140, 0) ;
+    /* Sarı Root Yapısı */
+    --bg-yellow: rgba(255, 255, 0) ;
+    --txt-yellow: rgba(255, 255, 102) ;
+    /* Mor Root Yapısı */
+    --bg-purple: rgba(128, 0, 128) ;
+    --txt-purple: rgba(148, 0, 211) ;
+    /* Yeşil Root Yapısı */
+    --bg-green: rgba(0, 128, 0) ;
+    --txt-green: rgb(65, 145, 65) ;
+    /* Mavi Root Yapısı */
+    --bg-blue: rgba(0, 0, 255) ;
+    --txt-blue: rgba(30, 144, 255) ;
+    /* Pembe Root Yapısı */
+    --bg-pink: rgba(255, 182, 193) ;
+    --txt-pink: rgba(255, 105, 180) ;
+}
+
+/* Kırmızı Class yapısı */
+.bg-red{
+    background-color: var(--bg-red) !important;
+}
+.txt-red{
+    color: var(--txt-red) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+
+/* Siyah Class Yapısı */
+.bg-black {
+    background-color: var(--bg-black) !important;
+}
+.txt-black {
+    color: var(--txt-black) !important;
+    text-shadow: 2px 2px 3px #ffffff;
+}
+/* Beyaz Class Yapısı */
+.bg-white {
+    background-color: var(--bg-white) !important;
+}
+.txt-white {
+    color: var(--txt-white) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Kahverengi Class Yapısı */
+.bg-brown {
+    background-color: var(--bg-brown) !important;
+}
+.txt-brown {
+    color: var(--txt-brown) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Turuncu Class Yapısı */
+.bg-orange {
+    background-color: var(--bg-orange) !important;
+}
+.txt-orange {
+    color: var(--txt-orange) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Sarı Class Yapısı */
+.bg-yellow {
+    background-color: var(--bg-yellow) !important;
+}
+.txt-yellow {
+    color: var(--txt-yellow) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Mor Class Yapısı */
+.bg-purple {
+    background-color: var(--bg-purple) !important;
+}
+.txt-purple {
+    color: var(--txt-purple) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Yeşil Class Yapısı */
+.bg-green {
+    background-color: var(--bg-green) !important;
+}
+.txt-green {
+    color: var(--txt-green) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Mavi Class Yapısı */
+.bg-blue {
+    background-color: var(--bg-blue) !important;
+}
+.txt-blue {
+    color: var(--txt-blue) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Pembe Class Yapısı */
+.bg-pink {
+    background-color: var(--bg-pink) !important;
+}
+.txt-pink {
+    color: var(--txt-pink) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}

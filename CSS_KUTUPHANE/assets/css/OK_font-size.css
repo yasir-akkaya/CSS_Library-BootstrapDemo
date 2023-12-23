@@ -1,0 +1,77 @@
+:root{
+    /* Text için kullanılacak yazı boyutları */
+    --par-4xl: 30px ; 
+    --par-3xl: 28px ; 
+    --par-xxl: 24px ; 
+    --par-xl: 20px ; 
+    --par-l: 18px ; 
+    --par-m: 16px ; 
+    --par-s: 14px ; 
+    --par-xs: 12px ; 
+    --par-xxs: 9px ; 
+    --par-3xs: 7px ;
+    /* Header için kullanılacak yazı boyutları ve strong özelliği */
+    --head-xl: 35px ; 
+    --head-l: 30px ; 
+    --head-m: 25px ; 
+    --head-s: 20px ; 
+    --head-xs: 15px ;
+}
+
+/* Text İçin Class Tanımlamaları */
+.par-4xl{
+    font-size: var(--par-4xl) !important ;
+}
+.par-3xl{
+    font-size: var(--par-3xl) !important ;
+}
+.par-xxl{
+    font-size: var(--par-xxl) !important ;
+}
+.par-xl{
+    font-size: var(--par-xl) !important ;
+}
+.par-l{
+    font-size: var(--par-l) !important ;
+}
+.par-m{
+    font-size: var(--par-m) !important ;
+}
+.par-s{
+    font-size: var(--par-s) !important ;
+}
+.par-xs{
+    font-size: var(--par-xs) !important ;
+}
+.par-xxs{
+    font-size: var(--par-xxs) !important ;
+}
+.par-3xs{
+    font-size: var(--par-3xs) !important ;
+}
+
+/* Header İçin Class Tanımlamaları */
+.head-xl{
+    font-size: var(--head-xl) !important ;
+    font-weight: bold !important ;
+}
+.head-l{
+    font-size: var(--head-l) !important ;
+    font-weight: bold !important ;
+}
+.head-m{
+    font-size: var(--head-m) !important ;
+    font-weight: bold !important ;
+}
+.head-s{
+    font-size: var(--head-s) !important ;
+    font-weight: bold !important ;
+}
+.head-xs{
+    font-size: var(--head-xs) !important ;
+    font-weight: bold !important ;
+}
+
+
+
+

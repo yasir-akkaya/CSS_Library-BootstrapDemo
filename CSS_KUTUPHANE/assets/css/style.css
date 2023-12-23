@@ -1,0 +1,1559 @@
+:root{
+    /* Margin ve padding yapıları için kullanılacak px değerleri */
+    --mp0: 0px;
+    --mp1: 10px;
+    --mp2: 20px;
+    --mp3: 30px;
+    --mp4: 40px;
+    --mp5: 50px;
+
+    /* Kırmızı Root yapısı */
+    --bg-red: rgba(190,4,4)  ;
+    --txt-red: rgba(248,56,56) ;
+    --btn-red: rgba(248,56,56) ;
+    /* Siyah Root Yapısı */
+    --bg-black: rgba(0, 0, 0) ;
+    --txt-black: rgb(87, 87, 87) ;
+    --btn-black: rgb(87, 87, 87) ;
+    /* Beyaz Root Yapısı */
+    --bg-white: rgba(255, 255, 255) ;
+    --txt-white: rgba(220, 220, 220) ;
+    --btn-white: rgba(220, 220, 220) ;
+    /* Kahverengi Root Yapısı */
+    --bg-brown: rgba(139, 69, 19) ;
+    --txt-brown: rgba(160, 82, 45) ;
+    --btn-brown: rgba(160, 82, 45) ;
+    /* Turuncu Root Yapısı */
+    --bg-orange: rgba(255, 165, 0) ;
+    --txt-orange: rgba(255, 140, 0) ;
+    --btn-orange: rgba(255, 140, 0) ;
+    /* Sarı Root Yapısı */
+    --bg-yellow: rgba(255, 255, 0) ;
+    --txt-yellow: rgba(255, 255, 102) ;
+    --btn-yellow: rgba(255, 255, 102) ;
+    /* Mor Root Yapısı */
+    --bg-purple: rgba(128, 0, 128) ;
+    --txt-purple: rgba(148, 0, 211) ;
+    --btn-purple: rgba(148, 0, 211) ;
+    /* Yeşil Root Yapısı */
+    --bg-green: rgba(0, 128, 0) ;
+    --txt-green: rgb(65, 145, 65) ;
+    --btn-green: rgb(65, 145, 65) ;
+    /* Mavi Root Yapısı */
+    --bg-blue: rgba(0, 0, 255) ;
+    --txt-blue: rgba(30, 144, 255) ;
+    --btn-blue: rgba(30, 144, 255) ;
+    /* Pembe Root Yapısı */
+    --bg-pink: rgba(255, 182, 193) ;
+    --txt-pink: rgba(255, 105, 180) ;
+    --btn-pink: rgba(255, 105, 180) ;
+
+    /* Text için kullanılacak yazı boyutları */
+    --par-4xl: 30px ; 
+    --par-3xl: 28px ; 
+    --par-xxl: 24px ; 
+    --par-xl: 20px ; 
+    --par-l: 18px ; 
+    --par-m: 16px ; 
+    --par-s: 14px ; 
+    --par-xs: 12px ; 
+    --par-xxs: 9px ; 
+    --par-3xs: 7px ;
+    /* Header için kullanılacak yazı boyutları ve strong özelliği */
+    --head-xl: 35px ; 
+    --head-l: 30px ; 
+    --head-m: 25px ; 
+    --head-s: 20px ; 
+    --head-xs: 15px ;
+}
+
+/* CSS RESET KODLARI */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Container yapısının tanımlanması */
+.container {
+    display: grid;
+    /* 12 kolonlu grid yapısı */
+    grid-template-columns: repeat(12, 1fr);
+    /* Kolonlar arası boşuk ayarı*/
+    gap: 5px;
+    margin: 6px;
+}
+
+.container>div {
+    padding: 5px;
+}
+
+/* Kolon sınıfları ve genişlik değerlerini taşıyan classların
+tanımlanması */
+.col-1 {
+    grid-column: span 1;    
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-7 {
+    grid-column: span 7;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-9 {
+    grid-column: span 9;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-11 {
+    grid-column: span 11;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+/* 1024Px TABLET EKRANI */
+@media screen and (max-width: 1024px) {
+    .col-md-1 {
+        grid-column: span 1;
+    }
+
+    .col-md-2 {
+        grid-column: span 2;
+    }
+
+    .col-md-3 {
+        grid-column: span 3;
+    }
+
+    .col-md-4 {
+        grid-column: span 4;
+    }
+
+    .col-md-5 {
+        grid-column: span 5;
+    }
+
+    .col-md-6 {
+        grid-column: span 6;
+    }
+
+    .col-md-7 {
+        grid-column: span 7;
+    }
+
+    .col-md-8 {
+        grid-column: span 8;
+    }
+
+    .col-md-9 {
+        grid-column: span 9;
+    }
+
+    .col-md-10 {
+        grid-column: span 10;
+    }
+
+    .col-md-11 {
+        grid-column: span 11;
+    }
+
+    .col-md-12 {
+        grid-column: span 12;
+    }
+}
+
+/* 768px TELEFON EKRANI */
+@media screen and (max-width: 768px) {
+    .col-s-1 {
+        grid-column: span 1;
+    }
+
+    .col-s-2 {
+        grid-column: span 2;
+    }
+
+    .col-s-3 {
+        grid-column: span 3;
+    }
+
+    .col-s-4 {
+        grid-column: span 4;
+    }
+
+    .col-s-5 {
+        grid-column: span 5;
+    }
+
+    .col-s-6 {
+        grid-column: span 6;
+    }
+
+    .col-s-7 {
+        grid-column: span 7;
+    }
+
+    .col-s-8 {
+        grid-column: span 8;
+    }
+
+    .col-s-9 {
+        grid-column: span 9;
+    }
+
+    .col-s-10 {
+        grid-column: span 10;
+    }
+
+    .col-s-11 {
+        grid-column: span 11;
+    }
+
+    .col-s-12 {
+        grid-column: span 12;
+    }
+
+}
+
+/*****PADDING CLASS YAPILARI*****/
+
+/* p0 ----> 4 taraftan padding uygular
+pt0 ----> sadece üst taraftan padding uygular 
+pb0 ----> sadece alt taraftan padding uygular
+ps0 ----> sadece sol taraftan padding uygular
+pe0 ----> sadece sağ taraftan padding uygular    */
+
+.p0{
+    padding: var(--mp0) !important ;
+}
+.pt0{
+    padding-top: var(--mp0) !important ;
+}
+.pb0{
+    padding-bottom: var(--mp0) !important ;
+}
+.ps0{
+    padding-left: var(--mp0) !important ;
+}
+.pe0{
+    padding-right: var(--mp0) !important ;
+}
+
+
+.p1{
+    padding: var(--mp1) !important ;
+}
+.pt1{
+    padding-top: var(--mp1) !important ;
+}
+.pb1{
+    padding-bottom: var(--mp1) !important ;
+}
+.ps1{
+    padding-left: var(--mp1) !important ;
+}
+.pe1{
+    padding-right: var(--mp1) !important ;
+}
+
+
+.p2{
+    padding: var(--mp2) !important ;
+}
+.pt2{
+    padding-top: var(--mp2) !important ;
+}
+.pb2{
+    padding-bottom: var(--mp2) !important ;
+}
+.ps2{
+    padding-left: var(--mp2) !important ;
+}
+.pe2{
+    padding-right: var(--mp2) !important ;
+}
+
+
+.p3{
+    padding: var(--mp3) !important ;
+}
+.pt3{
+    padding-top: var(--mp3) !important ;
+}
+.pb3{
+    padding-bottom: var(--mp3) !important ;
+}
+.ps3{
+    padding-left: var(--mp3) !important ;
+}
+.pe3{
+    padding-right: var(--mp3) !important ;
+}
+
+
+.p4{
+    padding: var(--mp4) !important ;
+}
+.pt4{
+    padding-top: var(--mp4) !important ;
+}
+.pb4{
+    padding-bottom: var(--mp4) !important ;
+}
+.ps4{
+    padding-left: var(--mp4) !important ;
+}
+.pe4{
+    padding-right: var(--mp4) !important ;
+}
+
+
+.p5{
+    padding: var(--mp5) !important ;
+}
+.pt5{
+    padding-top: var(--mp5) !important ;
+}
+.pb5{
+    padding-bottom: var(--mp5) !important ;
+}
+.ps5{
+    padding-left: var(--mp5) !important ;
+}
+.pe5{
+    padding-right: var(--mp5) !important ;
+}
+
+
+
+
+/*****MARGIN CLASS YAPILARI*****/
+
+/* m0 ----> 4 taraftan margin uygular
+mt0 ----> sadece üst taraftan margin uygular 
+mb0 ----> sadece alt taraftan margin uygular
+ms0 ----> sadece sol taraftan margin uygular
+me0 ----> sadece sağ taraftan margin uygular    */
+
+.m0{
+    margin: var(--mp0) !important ;
+}
+.mt0{
+    margin-top: var(--mp0) !important ;
+}
+.mb0{
+    margin-bottom: var(--mp0) !important ;
+}
+.ms0{
+    margin-left: var(--mp0) !important ;
+}
+.me0{
+    margin-right: var(--mp0) !important ;
+}
+
+
+.m1{
+    margin: var(--mp1) !important ;
+}
+.mt1{
+    margin-top: var(--mp1) !important ;
+}
+.mb1{
+    margin-bottom: var(--mp1) !important ;
+}
+.ms1{
+    margin-left: var(--mp1) !important ;
+}
+.me1{
+    margin-right: var(--mp1) !important ;
+}
+
+
+.m2{
+    margin: var(--mp2) !important ;
+}
+.mt2{
+    margin-top: var(--mp2) !important ;
+}
+.mb2{
+    margin-bottom: var(--mp2) !important ;
+}
+.ms2{
+    margin-left: var(--mp2) !important ;
+}
+.me2{
+    margin-right: var(--mp2) !important ;
+}
+
+
+.m3{
+    margin: var(--mp3) !important ;
+}
+.mt3{
+    margin-top: var(--mp3) !important ;
+}
+.mb3{
+    margin-bottom: var(--mp3) !important ;
+}
+.ms3{
+    margin-left: var(--mp3) !important ;
+}
+.me3{
+    margin-right: var(--mp3) !important ;
+}
+
+
+.m4{
+    margin: var(--mp4) !important ;
+}
+.mt4{
+    margin-top: var(--mp4) !important ;
+}
+.mb4{
+    margin-bottom: var(--mp4) !important ;
+}
+.ms4{
+    margin-left: var(--mp4) !important ;
+}
+.me4{
+    margin-right: var(--mp4) !important ;
+}
+
+
+.m5{
+    margin: var(--mp5) !important ;
+}
+.mt5{
+    margin-top: var(--mp5) !important ;
+}
+.mb5{
+    margin-bottom: var(--mp5) !important ;
+}
+.ms5{
+    margin-left: var(--mp5) !important ;
+}
+.me5{
+    margin-right: var(--mp5) !important ;
+}
+
+/* ARKAPLAN/ TEXT RENK YAPILARI */
+
+/* Kırmızı Class yapısı */
+.bg-red{
+    background-color: var(--bg-red) !important;
+}
+.txt-red{
+    color: var(--txt-red) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+
+/* Siyah Class Yapısı */
+.bg-black {
+    background-color: var(--bg-black) !important;
+}
+.txt-black {
+    color: var(--txt-black) !important;
+    text-shadow: 2px 2px 3px #ffffff;
+}
+/* Beyaz Class Yapısı */
+.bg-white {
+    background-color: var(--bg-white) !important;
+}
+.txt-white {
+    color: var(--txt-white) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Kahverengi Class Yapısı */
+.bg-brown {
+    background-color: var(--bg-brown) !important;
+}
+.txt-brown {
+    color: var(--txt-brown) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Turuncu Class Yapısı */
+.bg-orange {
+    background-color: var(--bg-orange) !important;
+}
+.txt-orange {
+    color: var(--txt-orange) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Sarı Class Yapısı */
+.bg-yellow {
+    background-color: var(--bg-yellow) !important;
+}
+.txt-yellow {
+    color: var(--txt-yellow) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Mor Class Yapısı */
+.bg-purple {
+    background-color: var(--bg-purple) !important;
+}
+.txt-purple {
+    color: var(--txt-purple) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Yeşil Class Yapısı */
+.bg-green {
+    background-color: var(--bg-green) !important;
+}
+.txt-green {
+    color: var(--txt-green) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Mavi Class Yapısı */
+.bg-blue {
+    background-color: var(--bg-blue) !important;
+}
+.txt-blue {
+    color: var(--txt-blue) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+/* Pembe Class Yapısı */
+.bg-pink {
+    background-color: var(--bg-pink) !important;
+}
+.txt-pink {
+    color: var(--txt-pink) !important;
+    text-shadow: 1px 1px 2px #28262693;
+}
+
+/* NORMAL VE OUTLINE BUTON YAPILARI VE RENK CLASSLARI */
+
+/* Kırmızı Normal Buton Class Yapısı */
+.btn-red {
+    background-color: var(--bg-red) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-red:hover {
+    background-color: var(--btn-red) !important;
+    box-shadow: 2px 2px 2px var(--bg-red);
+    text-shadow: 1px 1px 1px var(--bg-red);
+}
+/* Kırmızı Outline Buton Class Yapısı */
+.btn-out-red {
+    outline: 2px solid var(--bg-red);
+    color: var(--bg-red);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-red:hover {
+    background-color: var(--btn-red) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Siyah Normal Buton Class Yapısı */
+.btn-black {
+    background-color: var(--bg-black) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-black:hover {
+    background-color: var(--btn-black) !important;
+    box-shadow: 2px 2px 2px var(--bg-black);
+    text-shadow: 1px 1px 1px var(--bg-black);
+}
+/* Siyah Outline Buton Class Yapısı */
+.btn-out-black {
+    outline: 2px solid var(--bg-black);
+    color: var(--bg-black);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-black:hover {
+    background-color: var(--btn-black) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Beyaz Normal Buton Class Yapısı */
+.btn-white {
+    background-color: var(--bg-white) !important;
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-white:hover {
+    background-color: var(--btn-white) !important;
+    box-shadow: 2px 2px 2px var(--bg-white);
+    text-shadow: 1px 1px 1px var(--bg-white);
+}
+/* Beyaz Outline Buton Class Yapısı */
+.btn-out-white {
+    outline: 2px solid var(--bg-white);
+    color: var(--bg-white);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-white:hover {
+    background-color: var(--btn-white) !important;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+
+/* Kahverengi Normal Buton Class Yapısı */
+.btn-brown {
+    background-color: var(--bg-brown) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-brown:hover {
+    background-color: var(--btn-brown) !important;
+    box-shadow: 2px 2px 2px var(--bg-brown);
+    text-shadow: 1px 1px 1px var(--bg-brown);
+}
+/* Kahverengi Outline Buton Class Yapısı */
+.btn-out-brown {
+    outline: 2px solid var(--bg-brown);
+    color: var(--bg-brown);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-brown:hover {
+    background-color: var(--btn-brown) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Turuncu Normal Buton Class Yapısı */
+.btn-orange {
+    background-color: var(--bg-orange) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-orange:hover {
+    background-color: var(--btn-orange) !important;
+    box-shadow: 2px 2px 2px var(--bg-orange);
+    text-shadow: 1px 1px 1px var(--bg-orange);
+}
+/* Turuncu Outline Buton Class Yapısı */
+.btn-out-orange {
+    outline: 2px solid var(--bg-orange);
+    color: var(--bg-orange);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-orange:hover {
+    background-color: var(--btn-orange) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Sarı Normal Buton Class Yapısı */
+.btn-yellow {
+    background-color: var(--bg-yellow) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-yellow:hover {
+    background-color: var(--btn-yellow) !important;
+    box-shadow: 2px 2px 2px var(--bg-yellow);
+    text-shadow: 1px 1px 1px var(--bg-yellow);
+}
+/* Sarı Outline Buton Class Yapısı */
+.btn-out-yellow {
+    outline: 2px solid var(--bg-yellow);
+    color: var(--bg-yellow);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-yellow:hover {
+    background-color: var(--btn-yellow) !important;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+
+/* Mor Normal Buton Class Yapısı */
+.btn-purple {
+    background-color: var(--bg-purple) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-purple:hover {
+    background-color: var(--btn-purple) !important;
+    box-shadow: 2px 2px 2px var(--bg-purple);
+    text-shadow: 1px 1px 1px var(--bg-purple);
+}
+/* Mor Outline Buton Class Yapısı */
+.btn-out-purple {
+    outline: 2px solid var(--bg-purple);
+    color: var(--bg-purple);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-purple:hover {
+    background-color: var(--btn-purple) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+/* Yeşil Normal Buton Class Yapısı */
+.btn-green {
+    background-color: var(--bg-green) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-green:hover {
+    background-color: var(--btn-green) !important;
+    box-shadow: 2px 2px 2px var(--bg-green);
+    text-shadow: 1px 1px 1px var(--bg-green);
+}
+/* Yeşil Outline Buton Class Yapısı */
+.btn-out-green {
+    outline: 2px solid var(--bg-green);
+    color: var(--bg-green);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-green:hover {
+    background-color: var(--btn-green) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* Mavi Normal Buton Class Yapısı */
+.btn-blue {
+    background-color: var(--bg-blue) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-blue:hover {
+    background-color: var(--btn-blue) !important;
+    box-shadow: 2px 2px 2px var(--bg-blue);
+    text-shadow: 1px 1px 1px var(--bg-blue);
+}
+/* Mavi Outline Buton Class Yapısı */
+.btn-out-blue {
+    outline: 2px solid var(--bg-blue);
+    color: var(--bg-blue);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-blue:hover {
+    background-color: var(--btn-blue) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+/* Pembe Normal Buton Class Yapısı */
+.btn-pink {
+    background-color: var(--bg-pink) !important;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-pink:hover {
+    background-color: var(--btn-pink) !important;
+    box-shadow: 2px 2px 2px var(--bg-pink);
+    text-shadow: 1px 1px 1px var(--bg-pink);
+}
+/* Pembe Outline Buton Class Yapısı */
+.btn-out-pink {
+    outline: 2px solid var(--bg-pink);
+    color: var(--bg-pink);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.btn-out-pink:hover {
+    background-color: var(--btn-pink) !important;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+/* GENEL TABLO STİLLERİ */
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: center;
+}
+
+/***************RESPONSIVE TABLO YAPISI************/
+/* Mobil cihazlar için stil işlemleri */
+
+@media screen and (max-width: 768px) {
+    .resp-tab tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .resp-tab tbody td {
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Display:block sütun yapısına geçilir */
+    .resp-tab td:before {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Mobil görünümdeki ilk kolon işlemini bold yapar */
+    .resp-tab thead tr td:first-child,
+    .resp-tab tbody tr td:first-child {
+        font-weight: bold;
+    }
+
+    /* Tablo Başlığını yok eder */
+    .resp-tab thead {
+        display: none;
+    }
+}
+
+/* Tablet cihazlar için stil işlemleri */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Uygun konum ayarlamaları yapılır */
+    .resp-tab tbody td {
+        padding: 10px;
+        text-align: left;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .resp-tab td:before {
+        font-weight: bold;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+    }
+}
+
+/***************BORDERED TABLO YAPISI************/
+/* Border eklendi */
+.bor-tab,
+.bor-tab th,
+.bor-tab td {
+    border: 2px solid black;
+}
+
+/***************STRIPED TABLO YAPISI************/
+/* Tablonun renginden bağımsız, başlık kısmını ve tablonun
+çift satırlarını koyulaştıracak bir renk seçildi */
+.strp-tab tr:nth-child(even),
+thead tr{
+    background-color: #0000006c;
+}
+
+/***************HOVERABLE TABLO YAPISI************/
+/* Tablodaki satırla hover olduğunda renkten bağımsız 
+koyulaştıran.*/
+.hov-tab tr:hover {background-color: #000000a8;}
+
+/* TEXT STILLERI İÇEREN CLASS YAPILARI */
+
+/* Text Boyutları İçin Class Tanımlamaları */
+
+.par-4xl{
+    font-size: var(--par-4xl) !important ;
+}
+.par-3xl{
+    font-size: var(--par-3xl) !important ;
+}
+.par-xxl{
+    font-size: var(--par-xxl) !important ;
+}
+.par-xl{
+    font-size: var(--par-xl) !important ;
+}
+.par-l{
+    font-size: var(--par-l) !important ;
+}
+.par-m{
+    font-size: var(--par-m) !important ;
+}
+.par-s{
+    font-size: var(--par-s) !important ;
+}
+.par-xs{
+    font-size: var(--par-xs) !important ;
+}
+.par-xxs{
+    font-size: var(--par-xxs) !important ;
+}
+.par-3xs{
+    font-size: var(--par-3xs) !important ;
+}
+
+/* Header İçin Class Tanımlamaları */
+.head-xl{
+    font-size: var(--head-xl) !important ;
+    font-weight: bold !important ;
+}
+.head-l{
+    font-size: var(--head-l) !important ;
+    font-weight: bold !important ;
+}
+.head-m{
+    font-size: var(--head-m) !important ;
+    font-weight: bold !important ;
+}
+.head-s{
+    font-size: var(--head-s) !important ;
+    font-weight: bold !important ;
+}
+.head-xs{
+    font-size: var(--head-xs) !important ;
+    font-weight: bold !important ;
+}
+
+/* Yazı Fontları */
+.font-times{
+    font-family: 'Times New Roman', Times, serif ;
+}
+.font-arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font-courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+.font-lucida{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.font-calibri{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* DROPDOWN AŞAĞI VE SAĞ OLMAK ÜZERE CLASS YAPILARI */
+
+
+/* Dropdown içeriğininin Gizlenmesi */
+.drop-down {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* Uygun margin değeri verilir ve diğer stillerden etkilenmemesi için important yapılır */
+    margin-top: 6px !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriğini Görünür Yapar */
+.dropdown:hover .drop-down {
+    display: block;
+}
+
+/* Dropdown Öğeleri için stil */
+.drop-down a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Dropdown hover*/
+.drop-down a:hover {
+    background-color: #00000063;
+}
+
+
+/* Sağ-drop menunun içeriğininin Gizlenmesi */
+.drop-right {
+    display: none;
+    /* Drop menu butonunun sabit kalması için */
+    position: absolute !important;
+    background-color: #f9f9f9;
+    /* Uygun margin değeri verilir ve diğer stillerden etkilenmemesi için important yapılır */
+    margin-top: 6px !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriğini Görünür Yapar */
+.dropdown:hover .drop-right {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown Öğeleri için stil */
+.drop-right a {
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Dropdown hover*/
+.drop-right a:hover {
+    background-color: #00000063;
+}
+
+/* MENU YAPILARI */
+
+/* INLINE/ BLOCK MENU  YAPISI*********************/
+.navbar-inline a {
+    text-decoration: none;
+    color: white;
+}
+
+.inline-logo {
+    width: 80px;
+}
+
+.navbar-inline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inline-list {
+    list-style-type: none;
+}
+
+.inline-list .inline-list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+@media all and (max-width: 768px) {
+    .navbar-inline {
+        flex-direction: column;
+    }
+
+    .inline-list .inline-list-item {
+        display: block;
+        border-top: 1px solid rgba(0, 0, 0, 0.374);
+        padding: 20px 10px 10px 10px;
+    }
+
+    .inline-list {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* SOLA SABİT MENU  YAPISI************************/
+.navbar-left {
+    height: 100%;
+    width: 140px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-left img {
+    text-align: center;
+    padding-bottom: 5px;
+    max-width: 80%;
+}
+
+.left-list {
+    list-style: none;
+    padding: 0;
+}
+
+.left-list .list-item {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.left-list a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 5px;
+}
+
+@media all and (max-width: 768px) {
+
+    .navbar-left {
+        width: 70px;
+    }
+
+    .navbar-left img {
+        padding: 0px;
+        max-width: 70%;
+    }
+}
+
+/* BLOCK MENU YAPISI *************************/
+.navbar-block {
+    background-color: #333;
+}
+
+.block-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.block-list-item {
+    display: inline;
+}
+
+.block-list-item a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 768 pixel sınırına göre medya sorgusu */
+@media (max-width: 768px) {
+    .navbar-block {
+        text-align: center;
+    }
+
+    .block-listl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .block-list-item {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* FORM YAPILARI */
+
+/* Form öğelerini içine yazacağımız div'in özellikleri */
+.form-box {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* İçine form öğelerinin özellikleri */
+.form {
+    border-radius: 5px;
+    padding: 20px;
+}
+/* Inputlar'ın label'ları için display ve margin değeri */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* from öğelerinin div içerisinde konumlarını belirten ve stillerini belirten class */
+.form-item {
+    /* Ödevde istenildiği üzere yazı fontu ve büyüklüğü değiştirildi */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    width: 100% ;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 0 0 7px grey;
+}
+
+/* From öğesi zorunlu ise kırmızı kenarlık ile gelir */
+.form-item[required]:hover {
+    border: 2px solid red !important;    
+}
+/* Form öğelerinin üzerine gelindiğinde stil uygular */
+
+.form-item:hover{
+    border: 2px solid rgb(179, 179, 179) !important; 
+    box-shadow: 0 0 15px grey;   
+}
+
+
+/* Responsive tasarımın oluşmasını sağlayan sınır değerleri */
+@media screen and (max-width: 1024px) {
+    .form-box {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-box {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .form-item {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+
+/* SLIDERLAR***************** */
+
+/* 700x400 BOYUTUNDA SLIDER */
+
+/* Slider alanını tanımlar */
+.slider-wrapper-one {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Slider görsellere boyut ataması yapılır */
+.slider-one .img-one,
+.img-two,
+.img-three {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+}
+
+/* Slider için görsellere uygun pozisyonlar verilir*/
+.slider-one .img-one {
+    left: 0px;
+}
+
+.slider-one .img-two {
+    left: 700px;
+}
+
+.slider-one .img-three {
+    left: 1400px;
+}
+
+.slider-wrapper-one>.slider-one {
+    position: absolute;
+    left: 0px;
+    width: 1400px;
+    height: 400px;
+    animation-duration: 15s;
+    animation-name: sliderOne;
+    animation-iteration-count: infinite;
+}
+
+/* Slider'ın üzerine gelindiğinde animasyonu durdurur */
+.slider-one:hover {
+    animation-play-state: paused;
+}
+
+/* Slider'ın çalışması için kullanılcacak olan animasyonlar */
+
+@keyframes sliderOne {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: -100%;
+    }
+
+    99% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+
+
+/* GENİŞLİĞİN TAMAMINI KAPLAYAN SLIDER ****************/
+
+.slider-wrapper-two {
+    position: relative;
+    width: 100%;
+    /* Oluşturulacak slider'ın yükseklik değeri girilecek */
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider-wrapper-two .img-one,
+.img-two,
+.img-three {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+
+/* Görselin yatay olarak yayılmasını sağlayan kod */
+.slider-wrapper-two img {
+    width: 100%;
+}
+
+/* Slider görsellerinin konumunun belirlenmesi */
+.slider-wrapper-two .img-one {
+    left: 0%;
+}
+
+.slider-wrapper-two .img-two {
+    left: 100%;
+}
+
+.slider-wrapper-two .img-three {
+    left: 200%;
+}
+
+.slider-wrapper-two>.slider-two {
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    animation-duration: 15s;
+    animation-name: sliderTwo;
+    animation-iteration-count: infinite;
+}
+
+/* Slider'ın üzerine gelindiğinde animasyonu durdurur */
+.slider-two:hover {
+    animation-play-state: paused;
+}
+
+@keyframes sliderTwo {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: -100%;
+    }
+
+    99% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}
+
+/* OPACITY İLE ÇALIŞAN SLIDER ******************/
+.slider-wrapper-three {
+    position: relative;
+    width: 100%;
+    /* Oluşturulacak slider'ın yükseklik değeri girilecek */
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider-wrapper-three .img-one,
+.img-two,
+.img-three {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+
+/* Görselin yatay olarak yayılmasını sağlayan kod */
+.slider-wrapper-three img {
+    width: 100%;
+}
+
+/* Slider görsellerinin konumunun belirlenmesi */
+.slider-wrapper-three .img-one {
+    left: 0%;
+}
+
+.slider-wrapper-three .img-two {
+    left: 100%;
+}
+
+.slider-wrapper-three .img-three {
+    left: 200%;
+}
+
+.slider-wrapper-three> .slider-three {
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    animation-duration: 15s;
+    animation-name: sliderThree;
+    animation-iteration-count: infinite;
+}
+
+/* Fade oluşturacak animasyon değerleri */
+@keyframes sliderThree {
+    0% {
+        left: 0%;
+    }
+
+    32% {
+        left: -0.1% ;
+    }
+
+    32.9%{
+        opacity: 0;
+    }
+
+    33% {
+        left: -100% ;
+        opacity: 1;    
+    }
+
+    65% {
+        left : -100.1% ;
+    }
+    65.9%{
+        opacity: 0;
+    }
+    66% {
+        left: -200%;
+        opacity: 1;
+    }
+    98.9%{
+        opacity: 0;
+    }
+    99%{
+        left: -200.1%;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+/* OVERFLOW YAPILARI****** */
+
+/* Resmi overflow-div yapısı içerisinde sığdırarak ortalar*/
+.overflow-fit{
+    width: 300px; /* Div'in genişlik değeri*/
+    height: 300px; /* Div'in yükseklik değeri */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overflow-fit img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Resmi genişliğine göre ortalar, istenilen değer girilebilir*/
+.overflow-x {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overflow-x img {
+    max-width: 100%;
+}
+
+/* Resmi yüksekliğe göre ortalar, istenilen değer girilebilir */
+.overflow-y {
+    width: auto;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overflow-y img {
+    max-height: 100%;
+}
+
+/* Resmin orijinal boyutunu bozmaz */
+.overflow-org {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overflow-org img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Normal görseller için kullanılan class yapısı */
+.img-reg {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Border Radius'a sahip görseller için kullanılan class yapısı */
+.img-rad{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+

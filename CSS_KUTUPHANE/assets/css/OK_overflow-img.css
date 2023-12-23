@@ -1,0 +1,40 @@
+/* Resmi div içerisinde ortalayan class taımlaması */
+.overflow-fit {
+    /* Width ve height değerini kullanıcı istediği aralıkta belirleyecek */
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    background-color: red;
+}
+.overflow-fit img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* Resmi genişlik değerine göre ayarlayan class tanımlaması */
+.overflow-x{
+    /* width: Girilecek genişlik değeri; */
+    height: fit-content;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+/* Resmi yükseklik değerine göre ayarlayan class tanımlaması */
+.overflow-y{
+    width: fit-content;
+    /* height: Girilecek yükseklik değeri; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/* Resmin Boyutunu bozmadan koruyan class tanımlaması */
+.overflow-org{
+    width: auto;
+    height: auto;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

@@ -1,0 +1,226 @@
+/* 700x400 BOYUTUNDA SLIDER */
+
+/* Slider alanını tanımlar */
+.slider-wrapper-one {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Slider görsellere boyut ataması yapılır */
+.slider-one .img-one,
+.img-two,
+.img-three {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+}
+
+/* Slider için görsellere uygun pozisyonlar verilir*/
+.slider-one .img-one {
+    left: 0px;
+}
+
+.slider-one .img-two {
+    left: 700px;
+}
+
+.slider-one .img-three {
+    left: 1400px;
+}
+
+.slider-wrapper-one>.slider-one {
+    position: absolute;
+    left: 0px;
+    width: 1400px;
+    height: 400px;
+    animation-duration: 15s;
+    animation-name: sliderOne;
+    animation-iteration-count: infinite;
+}
+
+/* Slider'ın üzerine gelindiğinde animasyonu durdurur */
+.slider-one:hover {
+    animation-play-state: paused;
+}
+
+/* Slider'ın çalışması için kullanılcacak olan animasyonlar */
+
+@keyframes sliderOne {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: -100%;
+    }
+
+    99% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+
+
+/* GENİŞLİĞİN TAMAMINI KAPLAYAN SLIDER ****************/
+
+.slider-wrapper-two {
+    position: relative;
+    width: 100%;
+    /* Oluşturulacak slider'ın yükseklik değeri girilecek */
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider-wrapper-two .img-one,
+.img-two,
+.img-three {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+
+/* Görselin yatay olarak yayılmasını sağlayan kod */
+.slider-wrapper-two img {
+    width: 100%;
+}
+
+/* Slider görsellerinin konumunun belirlenmesi */
+.slider-wrapper-two .img-one {
+    left: 0%;
+}
+
+.slider-wrapper-two .img-two {
+    left: 100%;
+}
+
+.slider-wrapper-two .img-three {
+    left: 200%;
+}
+
+.slider-wrapper-two>.slider-two {
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    animation-duration: 15s;
+    animation-name: sliderTwo;
+    animation-iteration-count: infinite;
+}
+
+/* Slider'ın üzerine gelindiğinde animasyonu durdurur */
+.slider-two:hover {
+    animation-play-state: paused;
+}
+
+@keyframes sliderTwo {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: -100%;
+    }
+
+    99% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}
+
+/* OPACITY İLE ÇALIŞAN SLIDER ******************/
+.slider-wrapper-three {
+    position: relative;
+    width: 100%;
+    /* Oluşturulacak slider'ın yükseklik değeri girilecek */
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider-wrapper-three .img-one,
+.img-two,
+.img-three {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+
+/* Görselin yatay olarak yayılmasını sağlayan kod */
+.slider-wrapper-three img {
+    width: 100%;
+}
+
+/* Slider görsellerinin konumunun belirlenmesi */
+.slider-wrapper-three .img-one {
+    left: 0%;
+}
+
+.slider-wrapper-three .img-two {
+    left: 100%;
+}
+
+.slider-wrapper-three .img-three {
+    left: 200%;
+}
+
+.slider-wrapper-three> .slider-three {
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    animation-duration: 15s;
+    animation-name: sliderThree;
+    animation-iteration-count: infinite;
+}
+/* Fade oluşturacak animasyon değerleri */
+@keyframes sliderThree {
+    0% {
+        left: 0%;
+    }
+
+    32% {
+        left: -0.1% ;
+    }
+
+    32.9%{
+        opacity: 0;
+    }
+
+    33% {
+        left: -100% ;
+        opacity: 1;    
+    }
+
+    65% {
+        left : -100.1% ;
+    }
+    65.9%{
+        opacity: 0;
+    }
+    66% {
+        left: -200%;
+        opacity: 1;
+    }
+    98.9%{
+        opacity: 0;
+    }
+    99%{
+        left: -200.1%;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}

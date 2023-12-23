@@ -1,0 +1,56 @@
+/* OVERFLOW YAPILARI****** */
+
+/* Resmi overflow-div yapısı içerisinde sığdırarak ortalar*/
+.overflow-fit{
+    width: 300px; /* Div'in genişlik değeri*/
+    height: 300px; /* Div'in yükseklik değeri */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overflow-fit img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Resmi genişliğine göre ortalar, istenilen değer girilebilir*/
+.overflow-x {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overflow-x img {
+    max-width: 100%;
+}
+
+/* Resmi yüksekliğe göre ortalar, istenilen değer girilebilir */
+.overflow-y {
+    width: auto;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overflow-y img {
+    max-height: 100%;
+}
+
+/* Resmin orijinal boyutunu bozmaz */
+.overflow-org {
+    width: auto;
+    height: auto;
+   display: flex;
+}
+
+.overflow-org img {
+    max-width: 100%;
+    max-height: 100%;
+}
